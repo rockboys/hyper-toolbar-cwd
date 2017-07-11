@@ -1,0 +1,26 @@
+{
+  "name": "hyper-toolbar-cwd",
+  "version": "0.0.0",
+  "description": "`hyper-toolbar` plugin that shows current working directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockboys/hyper-toolbar-cwd.git"
+  },
+  "keywords": [
+    "hyper",
+    "hyper-toolbar"
+  ],
+  "author": "Pablo Lázaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rockboys/hyper-toolbar-cwd/issues"
+  },
+  "homepage": "https://github.com/rockboys/hyper-toolbar-cwd#readme",
+  "dependencies": {
+    "tildify": "^1.2.0"
+  }
+}
