@@ -1,7 +1,7 @@
 {
   "name": "hyper-toolbar-cwd",
   "version": "0.0.0",
-  "description": "Plugin for [`hyper-toolbar`](https://github.com/rockboys/hyper-toolbar) ([Hyper](https://hyper.is/)) that shows current working directory and offers useful functionalities with it",
+  "description": "Plugin for [`hyper-toolbar`](https://github.com/rockboys/hyper-toolbar) ([Hyper](https://hyper.is/)) that shows current working directory and offers useful functionalities with its",
   "main": "index.js",
   "scripts": {
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add .",
