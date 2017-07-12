@@ -1,10 +1,13 @@
 {
   "name": "hyper-toolbar-cwd",
   "version": "0.0.0",
-  "description": "`hyper-toolbar` plugin that shows current working directory",
+  "description": "Plugin for [`hyper-toolbar`](https://github.com/rockboys/hyper-toolbar) ([Hyper](https://hyper.is/)) that shows current working directory and offers useful functionalities with it",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add .",
+    "version:major": "npm version major -m \"chore(version): creates version %s\"",
+    "version:minor": "npm version minor -m \"chore(version): creates version %s\"",
+    "version:patch": "npm version patch -m \"chore(version): creates version %s\""
   },
   "repository": {
     "type": "git",
@@ -12,9 +15,22 @@
   },
   "keywords": [
     "hyper",
-    "hyper-toolbar"
+    "toolbar",
+    "hyper-toolbar",
+    "hyper-toolbar-cwd"
   ],
-  "author": "Pablo Lázaro",
+  "contributors": [
+    {
+      "name": "Pablo Lázaro Palencia",
+      "email": "pablolp90@gmail.com",
+      "url": "https://github.com/pablolazaro"
+    },
+    {
+      "name": "Miguel María Martínez Echeverría",
+      "email": "mimarec89@gmail.com",
+      "url": "https://github.com/mimarec"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rockboys/hyper-toolbar-cwd/issues"
@@ -22,5 +38,8 @@
   "homepage": "https://github.com/rockboys/hyper-toolbar-cwd#readme",
   "dependencies": {
     "tildify": "^1.2.0"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^1.3.1"
   }
 }
