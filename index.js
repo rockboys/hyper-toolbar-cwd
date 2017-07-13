@@ -5,16 +5,14 @@ exports.onWindow = win => {
 };
 
 exports.mapHyperState = ({ sessions }, map) => {
-  return Object.assign({}, map, {
-    toolbar: {
-      state: {
-        cwd: {
-          directory: sessions.activeUid && sessions.sessions && sessions.sessions[sessions.activeUid] ? sessions.sessions[sessions.activeUid].cwd : null,
-          activeSessionId: sessions.activeUid
-        }
-      }
+  if (map.toolbar) {
+    map.toolbar.state.cwd = { 
+      directory: sessions.activeUid ? sessions.sessions[sessions.activeUid].cwd : null,
+      activeSessionId: sessions.activeUid
     }
-  });
+  }
+
+  return Object.assign({}, map);
 };
 
 exports.decorateConfig = (config) => {
